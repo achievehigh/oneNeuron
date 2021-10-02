@@ -1,5 +1,8 @@
 from utils.model import Perceptron
-from utils.all_utils import prepare_data
+from utils.all_utils import prepare_data,save_plot,save_model
+import pandas as pd
+import numpy as np
+
 
 AND ={
     "x1":[0,0,1,1],
