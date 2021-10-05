@@ -7,17 +7,38 @@ import os
 plt.style.use("fivethirtyeight")
 
 def prepare_data(df):
+  """it is used to separate the dependednt variables and independent features
+
+  Args:
+      df (pd.DataFrame): it is the pandas DataFrame to 
+
+  Returns:
+      tuple: it returns the tuples of dependent variables and independent variables
+     """
   X=df.drop("y",axis=1)
   y=df["y"]
   return X,y
 
 def save_model(model_AND,filename):
+  """This saves the trianed model to
+
+  Args:
+      model_AND (python object): trained model to
+      filename (str): path to save the trained model
+  """
   model_dir="models"
   os.makedirs(model_dir,exist_ok=True)
   filepath=os.path.join(model_dir,filename)
   joblib.dump(model_AND,filepath)
 
 def save_plot(df, file_name, model):
+  """This saves the plot to the specified file and
+
+  Args:
+      df (pd.DataFrame): DataFrame  
+      file_name (and.png): plot of and.py
+      model (): [description]
+  """
   def _create_base_plot(df):
     df.plot(kind="scatter", x="x1", y="x2", c="y", s=100, cmap="winter")
     plt.axhline(y=0, color="black", linestyle="--", linewidth=1)
