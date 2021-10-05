@@ -37,7 +37,7 @@ def save_plot(df, file_name, model):
   Args:
       df (pd.DataFrame): DataFrame  
       file_name (and.png): plot of and.py
-      model (): [description]
+      model (trained model): trained model_and model
   """
   def _create_base_plot(df):
     df.plot(kind="scatter", x="x1", y="x2", c="y", s=100, cmap="winter")
