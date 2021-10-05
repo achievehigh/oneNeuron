@@ -5,3 +5,6 @@ oneNeuron | perceptron
  
 
  git add . && git commit -m "docstring updated" && git push origin main
+
+python
+from utils.all_utils import prepare_data
