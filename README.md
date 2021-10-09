@@ -8,3 +8,6 @@ oneNeuron | perceptron
 
 python
 from utils.all_utils import prepare_data
+
+'''
+[Git handbook]https://guides.github.com/introduction/git-handbook/)
