@@ -4,21 +4,14 @@ import pandas as pd
 import numpy as np
 
 def main(data,eta,epochs):
-
   
   df=pd.DataFrame(data)
   print(df)
 
   X,y=prepare_data(df)
-
- 
-
   model_AND =Perceptron(eta=ETA,epochs=EPOCHS)
-
   model_AND.fit(X,y)
-
   _=model_AND.total_loss()
-
   save_model(model_AND,filename="and.model")
   save_plot(df,"and.png",model_AND)
 
