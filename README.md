@@ -41,3 +41,22 @@ def main(data,eta,epochs):
   save_plot(df,"and.png",model_AND)
 ```
 
+### dataset
+x1 | x2 | y
+-|-|-
+0|0|0
+0|1|0
+1|0|0
+1|1|1
+
+###
+* point 1
+* point 2
+
+1.point 
+2.point
+
+
+  
+ 
+  
